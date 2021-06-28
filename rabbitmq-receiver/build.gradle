@@ -22,6 +22,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 	implementation group: 'org.springframework', name: 'spring-jms', version: '4.3.10.RELEASE'
 	implementation group: 'com.rabbitmq.jms', name: 'rabbitmq-jms', version: '1.7.0'
+	implementation 'org.springframework.kafka:spring-kafka:2.7.3'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'

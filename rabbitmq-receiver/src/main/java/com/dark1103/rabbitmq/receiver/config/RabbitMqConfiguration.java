@@ -1,4 +1,4 @@
-package com.dark1103.rabbitmq.receiver;
+package com.dark1103.rabbitmq.receiver.config;
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory;
 import org.springframework.amqp.core.AmqpAdmin;

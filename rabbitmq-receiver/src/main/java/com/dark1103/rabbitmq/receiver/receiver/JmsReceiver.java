@@ -1,5 +1,6 @@
-package com.dark1103.rabbitmq.receiver;
+package com.dark1103.rabbitmq.receiver.receiver;
 
+import com.dark1103.rabbitmq.receiver.RabbitMqReceiverApplication;
 import com.rabbitmq.jms.admin.RMQDestination;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +22,7 @@ public class JmsReceiver {
 
     @JmsListener(destination = "my-topic", containerFactory = "topicJmsListenerContainerFactory")
     public void ReceiveTopic(String message){
-        System.out.println(RabbitMqReceiverApplication.Id + ": " + message);
+        System.out.println("r: " + RabbitMqReceiverApplication.Id + " :: " + message);
     }
 
 
